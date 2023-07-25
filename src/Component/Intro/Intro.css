@@ -1,0 +1,36 @@
+#img_eff{
+    transition: all 1s ease-out;
+    animation: img 4s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+
+#scroll{
+    position: absolute;
+    transition: all 1s ease;
+    animation: scroll 500ms ease alternate infinite;
+}
+
+
+@keyframes scroll{
+    from {
+        bottom: 20px;
+    }
+    to{
+        bottom: 30px;
+    }
+}
+
+@keyframes img {
+    0%{
+        transform: translateX(20px);
+    }
+    25%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}

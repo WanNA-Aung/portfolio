@@ -1,0 +1,35 @@
+#underline-effect::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 5px;
+    background-color: rgb(30, 239, 30);
+    height: 3px;   
+    bottom: 0;
+    transition: all 500ms ease-in;
+    border-radius: 1rem;
+}
+
+#underline-effect:hover::after{
+    width: 90%;
+}
+
+#nav-items-eff::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 5px;
+    background-color: silver;
+    height: 3px;   
+    bottom: 0;
+    transition: all 500ms ease-in;
+}
+
+#nav-items-eff:hover::after{
+    width: 80%;
+}
+
+#theme-switch {
+    background: rgb(129,255,0);
+    background: linear-gradient(139deg, rgba(129,255,0,1) 6%, rgb(15, 154, 209) 73%);
+}
